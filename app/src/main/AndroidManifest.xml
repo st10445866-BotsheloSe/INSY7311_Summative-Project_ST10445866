@@ -10,16 +10,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Veda">
+        android:theme="@style/Theme.VedaApplication"
+        tools:targetApi="31">
+
+        <!-- 1. The Landing Page (MainActivity) -->
+        <!-- This stays as the LAUNCHER so it starts when the app opens -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 2. The Authentication Page (AuthActivity) -->
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+
+        <!-- 3. The Home Dashboard (DashboardActivity) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- 4. The Mood Logger (MoodLoggingActivity) -->
+        <activity
+            android:name=".MoodLoggingActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

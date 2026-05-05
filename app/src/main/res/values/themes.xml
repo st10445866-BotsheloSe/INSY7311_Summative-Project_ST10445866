@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Veda" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Unified Application Theme -->
+    <style name="Theme.VedaApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Principle 5: Consistency & Standards -->
+        <item name="android:windowBackground">@color/sombre_green</item>
+        <item name="colorPrimary">@color/sage_accent</item>
+        <item name="colorOnPrimary">@color/sombre_green</item>
+        <item name="android:textColorPrimary">@color/off_white</item>
     </style>
 
-    <style name="Theme.Veda" parent="Base.Theme.Veda" />
 </resources>
