@@ -14,7 +14,6 @@
         tools:targetApi="31">
 
         <!-- 1. The Landing Page (MainActivity) -->
-        <!-- This stays as the LAUNCHER so it starts when the app opens -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -32,12 +31,30 @@
         <!-- 3. The Home Dashboard (DashboardActivity) -->
         <activity
             android:name=".DashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTop" />
 
         <!-- 4. The Mood Logger (MoodLoggingActivity) -->
         <activity
             android:name=".MoodLoggingActivity"
             android:exported="false" />
+
+        <!-- 5. The Habits Tracker (HabitsActivity) -->
+        <activity
+            android:name=".HabitsActivity"
+            android:exported="false" />
+
+        <!-- 6. The Insights / Trends Page (InsightsActivity) -->
+        <activity
+            android:name=".InsightsActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <!-- 7. The Settings / Profile Page -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
 
     </application>
 

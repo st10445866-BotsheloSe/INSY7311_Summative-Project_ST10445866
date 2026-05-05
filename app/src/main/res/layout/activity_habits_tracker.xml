@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sombre_green"
+    android:padding="24dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/btnBackHabits"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="@color/off_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHabitTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Habits Tracker"
+        android:textColor="@color/off_white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBackHabits"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Sleep Section -->
+    <RelativeLayout
+        android:id="@+id/rlSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHabitTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvSleepLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="0h"
+            android:textColor="@color/sage_accent"/>
+
+        <SeekBar
+            android:id="@+id/sleepSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="12"
+            android:progressTint="@color/sage_accent"
+            android:thumbTint="@color/off_white"/>
+    </RelativeLayout>
+
+    <!-- Study Section -->
+    <RelativeLayout
+        android:id="@+id/rlStudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/rlSleep">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvStudyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="0h"
+            android:textColor="@color/sage_accent"/>
+
+        <SeekBar
+            android:id="@+id/studySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="8"
+            android:progressTint="@color/sage_accent"
+            android:thumbTint="@color/off_white"/>
+    </RelativeLayout>
+
+    <!-- Water Section -->
+    <RelativeLayout
+        android:id="@+id/rlWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/rlStudy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Intake"
+            android:textColor="@color/off_white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvWaterLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="0.0L"
+            android:textColor="@color/sage_accent"/>
+
+        <SeekBar
+            android:id="@+id/waterSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:max="40"
+            android:progressTint="@color/sage_accent"
+            android:thumbTint="@color/off_white"/>
+    </RelativeLayout>
+
+    <!-- Exercise Section -->
+    <Switch
+        android:id="@+id/swExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Exercise"
+        android:textColor="@color/off_white"
+        android:textSize="18sp"
+        android:thumbTint="@color/off_white"
+        android:trackTint="@color/sage_accent"
+        app:layout_constraintTop_toBottomOf="@id/rlWater" />
+
+    <Button
+        android:id="@+id/btnUpdateHabits"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update Habits"
+        android:backgroundTint="@color/sage_accent"
+        android:textColor="@color/sombre_green"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

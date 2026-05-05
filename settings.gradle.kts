@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // REQUIRED: Add this for the Line Chart library
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "Veda"
 include(":app")
- 

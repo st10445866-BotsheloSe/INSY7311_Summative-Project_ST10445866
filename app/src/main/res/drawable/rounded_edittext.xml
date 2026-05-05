@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Match the card background color from your low-fidelity prototype -->
+    <solid android:color="#3A5F53" />
+
+    <!-- Smooth corners for a professional feel -->
+    <corners android:radius="12dp" />
+
+    <!-- Subtle border for Principle 4: Direct Manipulation visibility -->
+    <stroke
+        android:width="1dp"
+        android:color="#80FFFFFF" />
+</shape>
